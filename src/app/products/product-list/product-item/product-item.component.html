@@ -1,0 +1,13 @@
+<div class="list-group mb-2">
+    <a href="#" class="list-group-item list-group-item-action clearfix" (click)="onSelected()">
+        <div class="float-left">
+            <p class="font-weight-bold">{{ product.name }}</p>
+            <p style="color: blue">Sell number: {{ product.saleNumber }}</p>
+            <p style="color: green">Stock: {{ product.stock }}</p>
+            <p>${{ product.price }}</p>
+        </div>
+        <div class="float-right">
+            <img [src]="product.imgage" alt="{{product.name}}" style="max-height: 100px;">
+        </div>
+    </a>
+</div>
